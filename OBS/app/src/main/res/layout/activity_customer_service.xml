@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.whitemartins.obs.CustomerServiceActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:background="@color/appColor"
+        android:text="@string/customer_service"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/transfers_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/appColor"
+        android:text="@string/transfers_stock"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/reporting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/appColor"
+        android:text="@string/reporting"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/end_travel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/appColor"
+        android:text="@string/end_travel"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/appColor"
+        android:text="@string/settings"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/remake_travel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/appColor"
+        android:text="@string/remake_travel"
+        android:textColor="@color/appTextColorWithBackground" />
+
+</LinearLayout>
