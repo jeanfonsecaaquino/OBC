@@ -1,7 +1,7 @@
 <resources>
     <!-- CONSTANTES DE NOMES DO APP -->
 
-    <string name="app_name">OBS</string>
+    <string name="app_name">OBC</string>
     <string name="app_name_sigla">White Martins - UC20</string>
     <string name="app_full_name">On Board Computer</string>
 
@@ -17,7 +17,7 @@
     <string name="cancel">CANCELAR VIAGEM</string>
 
     <!-- CONSTANTES CONFIRMACAO DE VIAGEM -->
-    <string name="customer_service">ATENDICMENTO AO CLIENTE</string>
+    <string name="customer_service">ATENDIMENTO AO CLIENTE</string>
     <string name="transfers_stock">TRANSFERE ESTOQUE</string>
     <string name="reporting">EMISSÃO DE RELATÓRIOS</string>
     <string name="end_travel">FIM DA VIAGEM</string>
