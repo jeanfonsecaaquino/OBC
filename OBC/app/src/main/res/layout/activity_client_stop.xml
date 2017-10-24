@@ -4,16 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.whitemartins.obc.util.client_stop"
+    tools:context="br.com.whitemartins.obc.ClientStopActivity"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/confirm_travel_data"
+        android:text="@string/client_stop"
         android:textAlignment="center"
         android:textColor="@color/appTextColor"
         android:enabled="false"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/next" />
+
+        <Button
+            android:id="@+id/list_clients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list"/>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_stop"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_stop_not_defined"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/remake_travel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/appColor"
+        android:text="@string/confirm"
+        android:textColor="@color/appTextColorWithBackground" />
 
 </LinearLayout>

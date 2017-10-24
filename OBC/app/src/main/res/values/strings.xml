@@ -38,8 +38,10 @@
     <!-- TELA DE PARADA DO CLIENTE -->
     <string name="client_stop">PARADA DO CLIENTE</string>
     <string name="client_number">N° DO CLIENTE</string>
-    <string name="client_next_stop">PRÓXIMA PARADA</string>
-    <string name="next_stop_not_defined">PRÓXIMA PARADA NÃO DEFINIDA</string>
+    <string name="next_stop">PRÓXIMA PARADA</string>
+    <string name="next">PRÓXIMA</string>
+    <string name="list">LISTAR</string>
+    <string name="next_stop_not_defined">NÃO DEFINIDA</string>
 
 
     <!-- TELA DE LISTAGEM DE CLIENTES-->
