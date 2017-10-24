@@ -1,4 +1,4 @@
-package br.com.whitemartins.obs.model;
+package br.com.whitemartins.obc.model;
 
 import java.util.Calendar;
 

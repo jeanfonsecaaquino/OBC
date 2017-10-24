@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.whitemartins.obs.SplashScreemActivity">
+    tools:context="br.com.whitemartins.obc.SplashScreemActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -28,7 +28,7 @@
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
-        android:indeterminateTint="#00ac8b"
-        android:progressTint="#00ac8b" />
+        android:indeterminateTint="@color/appColor"
+        android:progressTint="@color/appColor" />
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package br.com.whitemartins.obs;
+package br.com.whitemartins.obc;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("br.com.whitemartins.obs", appContext.getPackageName());
+        assertEquals("br.com.whitemartins.obc", appContext.getPackageName());
     }
 }

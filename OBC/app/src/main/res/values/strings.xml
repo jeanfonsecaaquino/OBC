@@ -25,4 +25,26 @@
     <string name="remake_travel">REFAZER VIAGEM</string>
 
 
+    <!-- MENU DA APLICAÇÃO -->
+    <string name="about">Sobre o Aplicativo</string>
+
+    <!--MENSAGENS DA APLICAÇÃO-->
+    <string name="exit_confirm_travel_msg">OS DADOS DA VIAGEM SERÃO PERDIDOS</string>
+    <string name="exit_confirm_clean_table_data">APAGANDO DADOS DAS TABELAS</string>
+    <string name="yes">SIM</string>
+    <string name="no">NÃO</string>
+
+
+    <!-- TELA DE PARADA DO CLIENTE -->
+    <string name="client_stop">PARADA DO CLIENTE</string>
+    <string name="client_number">N° DO CLIENTE</string>
+    <string name="client_next_stop">PRÓXIMA PARADA</string>
+    <string name="next_stop_not_defined">PRÓXIMA PARADA NÃO DEFINIDA</string>
+
+
+    <!-- TELA DE LISTAGEM DE CLIENTES-->
+    <string name="clients_list">LISTA DE CLIENTES</string>
+    <string name="pacient_name">NOME</string>
+    <string name="search">BUSCAR</string>
+
 </resources>

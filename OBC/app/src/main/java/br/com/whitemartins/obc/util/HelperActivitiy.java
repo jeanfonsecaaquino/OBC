@@ -1,11 +1,12 @@
-package br.com.whitemartins.obs.util;
+package br.com.whitemartins.obc.util;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 
-import br.com.whitemartins.obs.R;
+import br.com.whitemartins.obc.R;
 
 /**
  * Created by 1513 IRON on 22/10/2017.
@@ -16,6 +17,7 @@ public class HelperActivitiy {
     public static void setBarAction(AppCompatActivity activity){
         String barTitle = activity.getResources().getString(R.string.app_name_sigla);
         activity.getSupportActionBar().setTitle(barTitle);
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
 }

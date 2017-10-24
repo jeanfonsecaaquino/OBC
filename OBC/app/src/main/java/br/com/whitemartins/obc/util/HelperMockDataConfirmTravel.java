@@ -1,10 +1,10 @@
-package br.com.whitemartins.obs.util;
+package br.com.whitemartins.obc.util;
 
 import android.widget.EditText;
 
-import br.com.whitemartins.obs.ConfirmTravelDataActivity;
-import br.com.whitemartins.obs.R;
-import br.com.whitemartins.obs.model.TravelVO;
+import br.com.whitemartins.obc.ConfirmTravelDataActivity;
+import br.com.whitemartins.obc.R;
+import br.com.whitemartins.obc.model.TravelVO;
 
 /**
  * Created by 1513 IRON on 22/10/2017.

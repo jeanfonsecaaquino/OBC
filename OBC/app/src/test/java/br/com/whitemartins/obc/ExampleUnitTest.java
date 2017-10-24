@@ -1,4 +1,4 @@
-package br.com.whitemartins.obs;
+package br.com.whitemartins.obc;
 
 import org.junit.Test;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.whitemartins.obs.CustomerServiceActivity"
+    tools:context="br.com.whitemartins.obc.CustomerServiceActivity"
     android:orientation="vertical">
 
     <Button

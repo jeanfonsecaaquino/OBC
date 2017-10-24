@@ -1,11 +1,11 @@
-package br.com.whitemartins.obs;
+package br.com.whitemartins.obc;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import br.com.whitemartins.obs.util.HelperActivitiy;
+import br.com.whitemartins.obc.util.HelperActivitiy;
 
 public class SplashScreemActivity extends AppCompatActivity {
 
