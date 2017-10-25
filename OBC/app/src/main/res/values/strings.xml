@@ -35,7 +35,7 @@
     <string name="no">NÃO</string>
 
 
-    <!-- TELA DE PARADA DO CLIENTE -->
+    <!--TELA DE PARADA DO CLIENTE-->
     <string name="client_stop">PARADA DO CLIENTE</string>
     <string name="client_number">N° DO CLIENTE</string>
     <string name="next_stop">PRÓXIMA PARADA</string>
@@ -44,9 +44,14 @@
     <string name="next_stop_not_defined">NÃO DEFINIDA</string>
 
 
-    <!-- TELA DE LISTAGEM DE CLIENTES-->
+    <!--TELA DE LISTAGEM DE CLIENTES-->
     <string name="clients_list">LISTA DE CLIENTES</string>
     <string name="pacient_name">NOME</string>
     <string name="search">BUSCAR</string>
+
+    <!--TELA DE CONFIGURAÇÃO DO SISTEMA-->
+    <string name="system_settings">CONFIGURAÇÃO DO SISTEMA</string>
+    <string name="system_version">Versão 4.90</string>
+    <string name="battery_status">Status da Bateria</string>
 
 </resources>

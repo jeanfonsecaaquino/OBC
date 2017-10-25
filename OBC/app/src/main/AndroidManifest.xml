@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".ConfirmTravelDataActivity" />
         <activity android:name=".CustomerServiceActivity" />
-        <activity android:name=".ClientStopActivity"></activity>
+        <activity android:name=".ClientStopActivity" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

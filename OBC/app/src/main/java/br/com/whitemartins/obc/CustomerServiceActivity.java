@@ -17,13 +17,24 @@ public class CustomerServiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_service);
         HelperActivitiy.setBarAction(this);
+
         Button customerService = (Button) findViewById(R.id.customer_service);
         customerService.setOnClickListener(customerServiceClickListener);
+
+        Button settings = (Button) findViewById(R.id.settings);
+        settings.setOnClickListener(settingsClickListener);
+
     }
 
     private View.OnClickListener customerServiceClickListener = new View.OnClickListener() {
         public void onClick(View v) {
             startActivity(new Intent(CustomerServiceActivity.this, ClientStopActivity.class));
+        }
+    };
+
+    private View.OnClickListener settingsClickListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            startActivity(new Intent(CustomerServiceActivity.this, SettingsActivity.class));
         }
     };
 
