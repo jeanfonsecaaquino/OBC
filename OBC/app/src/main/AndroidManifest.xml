@@ -19,7 +19,10 @@
         <activity android:name=".ConfirmTravelDataActivity" />
         <activity android:name=".CustomerServiceActivity" />
         <activity android:name=".ClientStopActivity" />
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RecoverClientActivity" />
+        <activity android:name=".ConfirmClientActivity" />
+        <activity android:name=".ClientDetailActivity"></activity>
     </application>
 
 </manifest>

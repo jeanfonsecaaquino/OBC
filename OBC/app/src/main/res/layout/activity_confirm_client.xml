@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.whitemartins.obc.ConfirmClientActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/confirm_travel_data"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/client_number"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"/>
+
+    <EditText
+        android:id="@+id/confirm_client_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/client_name"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"/>
+
+    <EditText
+        android:id="@+id/confirm_client_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/client_address"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"/>
+
+    <EditText
+        android:id="@+id/confirm_client_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/client_cnpj_cpf"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"/>
+
+    <EditText
+        android:id="@+id/confirm_client_cnpj_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/confirm_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/appColor"
+        android:text="@string/confirm"
+        android:textColor="@color/appTextColorWithBackground" />
+
+
+</LinearLayout>

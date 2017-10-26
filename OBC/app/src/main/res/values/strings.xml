@@ -54,4 +54,32 @@
     <string name="system_version">Versão 4.90</string>
     <string name="battery_status">Status da Bateria</string>
 
+    <!--TELA DE CONFIGURAÇÃO DO SISTEMA-->
+    <string name="online_recover_client">RECUPERAÇÃO ON LINE DE CLIENTE</string>
+    <string name="online_recover_client_message">Favor informar o código do cliente que deseja recuperar ou atualizar na viagem!</string>
+
+    <!--TELA DE CONFIRMAÇÃO DO CLIENTE-->
+    <string name="client_confirm">CONFIRMAÇÃO DE CLIENTE</string>
+    <string name="client_name">NOME:</string>
+    <string name="client_address">ENDEREÇO</string>
+    <string name="client_cnpj_cpf">CNPJ/CPF</string>
+
+
+    <!-- CONSTANTES TELA DETALHE CLIENTE-->
+    <string name="client_sell">VENDA</string>
+    <string name="client_application">APLICAÇÃO</string>
+    <string name="client_gathering">RECOLHIMENTO</string>
+    <string name="client_change_order">ORDEM DE TROCA(BAIXA S8)</string>
+    <string name="client_future_delivery">REMESSA FATURA ENTREGA</string>
+    <string name="client_billing_shipment">REMESSA FATURAMENTO HC</string>
+    <string name="client_shipping_sale">REMESSA VENDA A ORDEM</string>
+    <string name="client_shipping_service">REMESSA PRESTAÇÃO DE SERVIÇO</string>
+    <string name="client_consult_invoice">CONSULTA/CANCELA NOTA FISCAL</string>
+    <string name="unimed_fake">52288641 - UNIMED RIO COOPERAT</string>
+
+    <!-- MENU BAR OPTIONS-->
+    <string name="menu_recover_client">Recuperar Cliente</string>
+    <string name="menu_travel_data">Dados da Viagem</string>
+    <string name="title_activity_detalhe_cliente">DetalheClienteActivity</string>
+
 </resources>

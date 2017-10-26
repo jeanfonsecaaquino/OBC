@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.style.BulletSpan;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import br.com.whitemartins.obc.util.HelperActivitiy;
 
@@ -23,7 +25,6 @@ public class CustomerServiceActivity extends AppCompatActivity {
 
         Button settings = (Button) findViewById(R.id.settings);
         settings.setOnClickListener(settingsClickListener);
-
     }
 
     private View.OnClickListener customerServiceClickListener = new View.OnClickListener() {
@@ -40,8 +41,17 @@ public class CustomerServiceActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_app, menu);
+        getMenuInflater().inflate(R.menu.menu_customer_service, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu_recover_client:
+                startActivity(new Intent(CustomerServiceActivity.this, RecoverClientActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

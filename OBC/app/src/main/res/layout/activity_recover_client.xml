@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.whitemartins.obc.RecoverClientActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/online_recover_client"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/online_recover_client_message"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/client_number"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/travel_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/confirm_recover_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/appColor"
+        android:text="@string/confirm"
+        android:textColor="@color/appTextColorWithBackground" />
+
+</LinearLayout>

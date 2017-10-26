@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.whitemartins.obc.ClientDetailActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/unimed_fake"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/client_sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_sell"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_application"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_gathering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_gathering"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_change_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_change_order"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_future_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_future_delivery"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_billing_shipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_billing_shipment"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_shipping_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_shipping_sale"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_shipping_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_shipping_service"
+        android:textColor="@color/appTextColorWithBackground" />
+
+    <Button
+        android:id="@+id/client_consult_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/appColor"
+        android:text="@string/client_consult_invoice"
+        android:textColor="@color/appTextColorWithBackground" />
+
+</LinearLayout>

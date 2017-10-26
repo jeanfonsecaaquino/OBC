@@ -6,16 +6,20 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import br.com.whitemartins.obc.util.HelperActivitiy;
+
 public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        HelperActivitiy.setBarAction(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         final TextView textBatteryPercent = (TextView) findViewById(R.id.text_battery_percent);
@@ -47,6 +51,12 @@ public class SettingsActivity extends AppCompatActivity {
         };
         IntentFilter batteryLevelFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
         registerReceiver(batteryLevelReceiver, batteryLevelFilter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_app, menu);
+        return true;
     }
 
 }
