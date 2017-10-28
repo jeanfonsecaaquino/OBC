@@ -43,7 +43,7 @@ public class ConfirmTravelDataActivity extends AppCompatActivity {
         travel.setRouteNumber("102");
         travel.setUnit("3212");
         travel.setVehicleNumber("102");
-        travel.setDriver("0");
+       // travel.setDriver("0");
         new HelperMockDataConfirmTravel(this).fillForm(travel);
         Button buttonConfirm = (Button) findViewById(R.id.confirm);
         Button buttonCancel = (Button) findViewById(R.id.cancel);

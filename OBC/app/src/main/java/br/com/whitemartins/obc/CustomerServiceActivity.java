@@ -49,8 +49,15 @@ public class CustomerServiceActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menu_recover_client:
-                startActivity(new Intent(CustomerServiceActivity.this, RecoverClientActivity.class));
+               // startActivity(new Intent(CustomerServiceActivity.this, RecoverClientActivity.class));
+
+            case R.id.menu_config_system:
+                //startActivity(new Intent(CustomerServiceActivity.this, RecoverClientActivity.class));
+
+            case R.id.menu_travel_data:
+              //  startActivity(new Intent(CustomerServiceActivity.this, RecoverClientActivity.class));
         }
+
         return super.onOptionsItemSelected(item);
     }
 

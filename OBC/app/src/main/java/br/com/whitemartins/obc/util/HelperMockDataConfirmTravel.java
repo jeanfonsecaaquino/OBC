@@ -15,7 +15,6 @@ public class HelperMockDataConfirmTravel {
     private EditText travelNumber, travelDate, vehicleNumber, unit, routeNumber, driver;
 
     public HelperMockDataConfirmTravel(ConfirmTravelDataActivity activity){
-        this.driver = (EditText) activity.findViewById(R.id.driver);
         this.travelDate = (EditText) activity.findViewById(R.id.travel_date);
         this.travelNumber = (EditText) activity.findViewById(R.id.travel_number);
         this.vehicleNumber = (EditText) activity.findViewById(R.id.vehicle_number);
@@ -24,7 +23,7 @@ public class HelperMockDataConfirmTravel {
     }
 
     public void fillForm(TravelVO travel){
-        this.driver.setText(travel.getDriver());
+        //this.driver.setText(travel.getDriver());
         this.travelDate.setText(travel.getTravelDate());
         this.travelNumber.setText(travel.getTravelNumber());
         this.vehicleNumber.setText(travel.getVehicleNumber());

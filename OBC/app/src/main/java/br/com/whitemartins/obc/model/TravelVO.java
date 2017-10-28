@@ -50,11 +50,11 @@ public class TravelVO {
         this.routeNumber = routeNumber;
     }
 
-    public String getDriver() {
+   /* public String getDriver() {
         return driver;
     }
-
-    public void setDriver(String driver) {
+*/
+  /*  public void setDriver(String driver) {
         this.driver = driver;
-    }
+    }*/
 }

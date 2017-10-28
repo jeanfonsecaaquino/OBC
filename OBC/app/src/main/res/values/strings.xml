@@ -7,14 +7,16 @@
 
     <!-- CONSTANTES CONFIRMACAO DE VIAGEM -->
     <string name="confirm_travel_data">CONFIRMA DADOS DA VIAGEM</string>
+    <string name="confirm_travel_client">CONFIRMA DADOS DO CLIENTE</string>
     <string name="num_travel">NÚMERO DA VIAGEM</string>
-    <string name="travel_date">DATA VIAJEM</string>
+    <string name="travel_date">DATA VIAGEM</string>
     <string name="num_vehicle">NUM. VEÍCULO</string>
     <string name="unit">UNIDADE</string>
     <string name="rout_num">NUM. ROTA</string>
     <string name="driver">MOTORISTA</string>
     <string name="confirm">CONFIRMAR</string>
     <string name="cancel">CANCELAR VIAGEM</string>
+    <string name="nCliente">Nº CLIENTE</string>
 
     <!-- CONSTANTES CONFIRMACAO DE VIAGEM -->
     <string name="customer_service">ATENDIMENTO AO CLIENTE</string>
@@ -27,6 +29,7 @@
 
     <!-- MENU DA APLICAÇÃO -->
     <string name="about">Sobre o Aplicativo</string>
+    <string name="voltar">voltar</string>
 
     <!--MENSAGENS DA APLICAÇÃO-->
     <string name="exit_confirm_travel_msg">OS DADOS DA VIAGEM SERÃO PERDIDOS</string>
@@ -78,6 +81,7 @@
     <string name="unimed_fake">52288641 - UNIMED RIO COOPERAT</string>
 
     <!-- MENU BAR OPTIONS-->
+    <string name="menu_config_system">Configurar Sistema</string>
     <string name="menu_recover_client">Recuperar Cliente</string>
     <string name="menu_travel_data">Dados da Viagem</string>
     <string name="title_activity_detalhe_cliente">DetalheClienteActivity</string>
