@@ -22,7 +22,9 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".RecoverClientActivity" />
         <activity android:name=".ConfirmClientActivity" />
-        <activity android:name=".ClientDetailActivity"></activity>
+        <activity android:name=".ClientDetailActivity" />
+        <activity android:name=".ClientListActivity" />
+        <activity android:name=".OrderSellActivity"></activity>
     </application>
 
 </manifest>

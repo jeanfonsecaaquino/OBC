@@ -17,12 +17,20 @@ public class ClientStopActivity extends AppCompatActivity {
         setContentView(R.layout.activity_client_stop);
         HelperActivitiy.setBarAction(this);
         Button buttonConfirm = (Button) findViewById(R.id.remake_travel);
+        Button listClients = (Button) findViewById(R.id.list_clients);
         buttonConfirm.setOnClickListener(confirmClickListener);
+        listClients.setOnClickListener(listClientClickListener);
     }
 
     private View.OnClickListener confirmClickListener = new View.OnClickListener() {
         public void onClick(View v) {
             startActivity(new Intent(ClientStopActivity.this, ConfirmClientActivity.class));
+        }
+    };
+
+    private View.OnClickListener listClientClickListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            startActivity(new Intent(ClientStopActivity.this, ClientListActivity.class));
         }
     };
 

@@ -3,6 +3,7 @@ package br.com.whitemartins.obc;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
@@ -17,11 +18,13 @@ public class ConfirmClientActivity extends AppCompatActivity {
         HelperActivitiy.setBarAction(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_client);
-        ClientVO cliente = new ClientVO();
-        cliente.setClientNumber("52288641");
-        cliente.setName("UNIMED RIO COOPERATIVA DE TRABALHO MEDIC");
-        cliente.setAddress("AVENIDA ARMANDO LOMBARDI 400 L101 BARRA DA TIJUCA RIO DE JANEIRO RJ");
-        cliente.setCnpjCpf("1-42.163.881/0001-01");
+        ClientVO cliente = null;
+        if(getIntent().getExtras()!=null){
+            String clientNumber = getIntent().getExtras().getString("clientNumber");
+            cliente = HelperMockDataConfirmClient.getClientByNumber(clientNumber);
+        }else{
+            HelperMockDataConfirmClient.getClientByNumber("5184657");
+        }
         new HelperMockDataConfirmClient(this).fillForm(cliente);
         Button confirmClient = (Button) findViewById(R.id.confirm_client);
         confirmClient.setOnClickListener(confirmClickListener);
@@ -32,5 +35,11 @@ public class ConfirmClientActivity extends AppCompatActivity {
             startActivity(new Intent(ConfirmClientActivity.this, ClientDetailActivity.class));
         }
     };
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_client_stop, menu);
+        return true;
+    }
 
 }

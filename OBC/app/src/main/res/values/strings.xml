@@ -86,4 +86,11 @@
     <string name="menu_travel_data">Dados da Viagem</string>
     <string name="title_activity_detalhe_cliente">DetalheClienteActivity</string>
 
+    <!-- CONSTANTES TELA VENDA DE PEDIDOS-->
+    <string name="order_sell">PEDIDO - VENDA</string>
+    <string name="order_sell_number_product">Nº PEDIDO</string>
+    <string name="order_sell_order">PEDIDO</string>
+    <string name="order_sell_list">LISTAR</string>
+    <string name="order_sell_qtd_itens">QUANTIDADE DE ITENS</string>
+    <string name="finish_sell">FINALIZAR PEDIDO</string>
 </resources>
