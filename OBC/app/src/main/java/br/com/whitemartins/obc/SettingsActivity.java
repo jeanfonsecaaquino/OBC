@@ -19,9 +19,9 @@ public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        HelperActivitiy.setBarAction(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        HelperActivitiy.setBarAction(this);
         final TextView textBatteryPercent = (TextView) findViewById(R.id.text_battery_percent);
         final ProgressBar progressBarBatteryPercent = (ProgressBar) findViewById(R.id.battery_progress_bar);
         final TextView currentDate = (TextView) findViewById(R.id.current_date);

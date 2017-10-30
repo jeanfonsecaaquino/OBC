@@ -14,6 +14,7 @@ public class RecoverClientActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         HelperActivitiy.setBarAction(this);
         super.onCreate(savedInstanceState);
+        HelperActivitiy.setBarAction(this);
         setContentView(R.layout.activity_recover_client);
         Button confirmClient = (Button) findViewById(R.id.confirm_recover_client);
         confirmClient.setOnClickListener(confirmClickListener);

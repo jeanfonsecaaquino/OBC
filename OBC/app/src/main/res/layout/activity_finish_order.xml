@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.whitemartins.obc.OrderSellActivity"
+    tools:context="br.com.whitemartins.obc.FinishOrderActivity"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/order_sell"
+        android:text="@string/finish_order"
         android:textAlignment="center"
         android:textColor="@color/appTextColor"
         android:enabled="false"/>
@@ -20,44 +20,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:text="@string/order_sell_number_product"
+        android:text="@string/total_order"
         android:textColor="@color/appTextColor" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number" />
-
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
-
-        <Button
-            android:id="@+id/number_order"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/appColor"
-            android:text="@string/order_sell_order"
-            android:textColor="@color/appTextColorWithBackground"/>
-        <Button
-            android:id="@+id/list_clients"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@color/appColor"
-            android:text="@string/list"
-            android:textColor="@color/appTextColorWithBackground"/>
-
-    </GridLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:text="@string/order_sell_qtd_itens"
+        android:text="@string/money"
+        android:textColor="@color/appTextColor" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/check"
+        android:textColor="@color/appTextColor" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/check_number"
+        android:textColor="@color/appTextColor" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/invoice"
         android:textColor="@color/appTextColor" />
 
     <EditText
@@ -66,20 +77,12 @@
         android:inputType="number" />
 
     <Button
+        android:id="@+id/finish_order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:background="@color/appColor"
         android:text="@string/confirm"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/appTextColorWithBackground"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/appColor"
-        android:layout_marginTop="10dp"
-        android:text="@string/finish_sell"
-        android:textColor="@color/appTextColorWithBackground"/>
-
+        android:textColor="@color/appTextColorWithBackground" />
 
 </LinearLayout>

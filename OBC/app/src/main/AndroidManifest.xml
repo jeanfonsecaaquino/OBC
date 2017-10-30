@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.whitemartins.obc">
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +13,11 @@
         <activity android:name=".SplashScreemActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
         <activity android:name=".ConfirmTravelDataActivity" />
         <activity android:name=".CustomerServiceActivity" />
         <activity android:name=".ClientStopActivity" />
@@ -24,7 +26,16 @@
         <activity android:name=".ConfirmClientActivity" />
         <activity android:name=".ClientDetailActivity" />
         <activity android:name=".ClientListActivity" />
-        <activity android:name=".OrderSellActivity"></activity>
+        <activity android:name=".OrderSellActivity" />
+        <activity android:name=".OrderSellMedicine" />
+        <activity android:name=".FinishOrderActivity" />
+        <activity android:name=".SendInvoiceActivity" />
+        <activity android:name=".SouthpawInvoiceActivity" />
+        <activity android:name=".SignatureActivity" />
+        <activity android:name=".BarCodeActivity"></activity>
     </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.Camera"/>
 
 </manifest>

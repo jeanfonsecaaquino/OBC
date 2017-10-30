@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.whitemartins.obc.model.ClientVO;
+import br.com.whitemartins.obc.util.HelperActivitiy;
 import br.com.whitemartins.obc.util.HelperMockDataConfirmClient;
 
 public class ClientListActivity extends AppCompatActivity {
@@ -21,8 +22,8 @@ public class ClientListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_list);
-        ArrayAdapter<ClientVO> adapter = new ArrayAdapter<ClientVO>(this,
-                android.R.layout.simple_list_item_1,HelperMockDataConfirmClient.getListClientsMock());
+        HelperActivitiy.setBarAction(this);
+        ArrayAdapter<ClientVO> adapter = new ArrayAdapter<ClientVO>(this, android.R.layout.simple_list_item_1,HelperMockDataConfirmClient.getListClientsMock());
         final ListView clientList = (ListView) findViewById(R.id.client_list);
 
         clientList.setAdapter(adapter);

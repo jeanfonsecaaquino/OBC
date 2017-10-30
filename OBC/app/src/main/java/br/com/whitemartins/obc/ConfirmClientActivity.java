@@ -15,15 +15,17 @@ public class ConfirmClientActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        HelperActivitiy.setBarAction(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_client);
+        HelperActivitiy.setBarAction(this);
         ClientVO cliente = null;
+        HelperMockDataConfirmClient mockData = new HelperMockDataConfirmClient(ConfirmClientActivity.this);
+        mockData.getListClientsMock();
         if(getIntent().getExtras()!=null){
             String clientNumber = getIntent().getExtras().getString("clientNumber");
-            cliente = HelperMockDataConfirmClient.getClientByNumber(clientNumber);
+            cliente = mockData.getClientByNumber(clientNumber);
         }else{
-            HelperMockDataConfirmClient.getClientByNumber("5184657");
+            cliente = mockData.getClientByNumber("5184657");
         }
         new HelperMockDataConfirmClient(this).fillForm(cliente);
         Button confirmClient = (Button) findViewById(R.id.confirm_client);

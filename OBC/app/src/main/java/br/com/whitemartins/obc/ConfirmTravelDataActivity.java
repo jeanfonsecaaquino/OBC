@@ -34,9 +34,9 @@ public class ConfirmTravelDataActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        HelperActivitiy.setBarAction(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_travel_data);
+        HelperActivitiy.setBarAction(this);
         TravelVO travel = new TravelVO();
         travel.setTravelNumber("077936");
         travel.setTravelDate("04/04/2016");

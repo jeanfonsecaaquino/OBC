@@ -34,6 +34,7 @@
     <!--MENSAGENS DA APLICAÇÃO-->
     <string name="exit_confirm_travel_msg">OS DADOS DA VIAGEM SERÃO PERDIDOS</string>
     <string name="exit_confirm_clean_table_data">APAGANDO DADOS DAS TABELAS</string>
+    <string name="bar_code_msg">CODIDO VERIFICADO COM SUCESSO</string>
     <string name="yes">SIM</string>
     <string name="no">NÃO</string>
 
@@ -93,4 +94,41 @@
     <string name="order_sell_list">LISTAR</string>
     <string name="order_sell_qtd_itens">QUANTIDADE DE ITENS</string>
     <string name="finish_sell">FINALIZAR PEDIDO</string>
+    <string name="cylinder">CILINDRO</string>
+    <string name="lot">LOTE</string>
+
+    <!-- CONSTANTE DA TELA DE FINALIZAR PEDIDO-->
+    <string name="order_sell_producct_detail">40038432 - Oxigenio Medicinal 10M3 1000 - Capacidade: 10.00</string>
+    <string name="finish_order">FINALIZAR PEDIDO</string>
+    <string name="total_order">TOTAL DO PEDIDO</string>
+    <string name="money">DINHEIRO</string>
+    <string name="check">CHEQUE</string>
+    <string name="check_number">NUM. CHEQUE</string>
+    <string name="invoice">FATURA</string>
+    <string name="title_activity_send_invoice">SendInvoiceActivity</string>
+
+    <!-- CONSTANTE DA TELA DE FINALIZAR PEDIDO-->
+    <string name="send_invoice_warning_1">Atenção! Aguarde a finalização do processo de emissão da NFe</string>
+    <string name="time_generator">00:00</string>
+    <string name="status_invoice">Status: Criando Nota Fiscal</string>
+    <string name="send_invoice_warning_2">Atenção! Não é permitido reiniciar o coletor (BOOT) até que o CEC seja impresso</string>
+
+    <!-- CONSTANTE DA TELA DE Canhoto-->
+    <string name="southpaw_invoice_client">Canhoto de Entrega ao Cliente</string>
+    <string name="client">Cliente</string>
+    <string name="nfe_serie">Nfe/Série</string>
+    <string name="operation">Operação</string>
+    <string name="access_key">Chave Acesso</string>
+    <string name="protocol_user">Protocolo de Autorização de Uso</string>
+    <string name="item">Item</string>
+    <string name="volume">Volume</string>
+    <string name="total_value_order">Valor Total da Nota Fiscal</string>
+
+
+    <!-- CONSTANTE TELA DE ASSINATURA-->
+    <string name="save_signature">SALVAR ASSINATURA</string>
+    <string name="clear">LIMPAR</string>
+
+    <!-- CONSTANTE DE CODIGO DE BARRAS -->
+    <string name="verify_bar_code">VERIFICAR CODIGO DE BARRAS</string>
 </resources>
