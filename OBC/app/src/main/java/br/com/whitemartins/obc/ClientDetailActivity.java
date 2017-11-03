@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -32,5 +34,17 @@ public class ClientDetailActivity extends AppCompatActivity {
             startActivity(new Intent(ClientDetailActivity.this, OrderSellActivity.class));
         }
     };
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        HelperActivitiy.events(this, item);
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_client_detail_menu, menu);
+        return true;
+    }
 
 }

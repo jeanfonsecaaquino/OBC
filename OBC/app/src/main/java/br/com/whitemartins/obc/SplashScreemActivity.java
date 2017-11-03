@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 
 import br.com.whitemartins.obc.util.HelperActivitiy;
 
@@ -26,5 +27,10 @@ public class SplashScreemActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        HelperActivitiy.events(this, item);
+        return super.onOptionsItemSelected(item);
+    }
 
 }

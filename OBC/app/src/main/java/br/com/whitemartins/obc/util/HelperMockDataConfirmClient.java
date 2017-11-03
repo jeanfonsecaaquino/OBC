@@ -8,7 +8,7 @@ import java.util.List;
 import br.com.whitemartins.obc.ConfirmClientActivity;
 import br.com.whitemartins.obc.R;
 import br.com.whitemartins.obc.model.ClientVO;
-import br.com.whitemartins.obc.model.Item;
+import br.com.whitemartins.obc.model.ItemVO;
 
 /**
  * Created by 1513 IRON on 22/10/2017.
@@ -20,7 +20,7 @@ public class HelperMockDataConfirmClient {
 
     private static final String PACIENTE = "PACIENTE";
     private static List<ClientVO> clients = new ArrayList<>();
-    private static List<Item> items = new ArrayList<>();
+    private static List<ItemVO> items = new ArrayList<>();
 
     public HelperMockDataConfirmClient(ConfirmClientActivity activity) {
         this.clientNumber = (EditText) activity.findViewById(R.id.confirm_client_number);
@@ -56,10 +56,12 @@ public class HelperMockDataConfirmClient {
         return null;
     }
 
-    public static List<Item> getItemsMock() {
-        new Item("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
-        new Item("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
-        new Item("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
+    public static List<ItemVO> getItemsMock() {
+        if(items.size()==0) {
+            new ItemVO("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
+            new ItemVO("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
+            new ItemVO("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
+        }
         return items;
     }
 

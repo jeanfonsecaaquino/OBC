@@ -1,6 +1,7 @@
 package br.com.whitemartins.obc;
 
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.style.BulletSpan;
@@ -47,6 +48,7 @@ public class CustomerServiceActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        HelperActivitiy.events(this, item);
         switch (item.getItemId()){
             case R.id.menu_recover_client:
                // startActivity(new Intent(CustomerServiceActivity.this, RecoverClientActivity.class));

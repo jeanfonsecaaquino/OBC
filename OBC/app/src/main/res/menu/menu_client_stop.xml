@@ -23,4 +23,10 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/signup_client"
+        android:title="@string/signup_client"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>

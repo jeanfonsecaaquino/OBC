@@ -30,5 +30,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     compile 'com.android.support:design:26.+'
     compile 'com.google.android.gms:play-services-vision:9.4.0'
+    compile(name: 'DO_AndroidSDK_v2.4.9', ext: 'aar')
     testCompile 'junit:junit:4.12'
+
 }

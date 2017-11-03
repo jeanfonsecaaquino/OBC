@@ -36,13 +36,19 @@ public class CanvasView extends View {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeWidth(4f);
+        setDrawingCacheEnabled(true);
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        mBitmap.setHasAlpha(true);
         mCanvas = new Canvas(mBitmap);
+    }
+
+    public Bitmap getmBitmap(){
+        return getDrawingCache();
     }
 
     @Override

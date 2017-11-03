@@ -14,21 +14,23 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="@string/southpaw_invoice_client"
             android:textAlignment="center"
-            android:textColor="@color/appTextColor" />
+            android:textColor="@color/appTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="@string/nfe_serie"
-            android:textAlignment="center"
             android:textColor="@color/appTextColor" />
 
         <EditText
             android:id="@+id/nfe_serie"
+            android:textColor="@color/appTextColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
@@ -39,12 +41,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="@string/operation"
-            android:textAlignment="center"
             android:textColor="@color/appTextColor" />
 
         <EditText
             android:id="@+id/operarion"
             android:layout_width="match_parent"
+            android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:enabled="false" />
@@ -54,12 +56,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="@string/access_key"
-            android:textAlignment="center"
             android:textColor="@color/appTextColor" />
 
         <EditText
             android:id="@+id/access_key"
             android:layout_width="match_parent"
+            android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:enabled="false" />
@@ -69,12 +71,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="@string/protocol_user"
-            android:textAlignment="center"
             android:textColor="@color/appTextColor" />
 
         <EditText
             android:id="@+id/protocol_user"
             android:layout_width="match_parent"
+            android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:enabled="false" />
@@ -82,7 +84,6 @@
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp">
 
@@ -114,13 +115,13 @@
         <ListView
             android:id="@+id/item_list"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="114dp"></ListView>
 
         <Button
             android:id="@+id/southpaw_confirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_alignParentBottom="true"
             android:background="@color/appColor"
             android:text="@string/confirm"
             android:textColor="@color/appTextColorWithBackground" />

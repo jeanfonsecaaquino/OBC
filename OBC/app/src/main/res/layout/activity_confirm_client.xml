@@ -18,19 +18,21 @@
         android:layout_marginTop="15dp"
         android:text="@string/confirm_travel_client"
         android:textAlignment="center"
-        android:textColor="@color/appTextColor"/>
+        android:textColor="@color/appTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/client_number"
-        android:textAlignment="center"
         android:textColor="@color/appTextColor"/>
 
     <EditText
         android:id="@+id/confirm_client_number"
         android:layout_width="match_parent"
+        android:textColor="@color/appTextColor"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:enabled="false"/>
@@ -40,12 +42,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/client_name"
-        android:textAlignment="center"
         android:textColor="@color/appTextColor"/>
 
     <EditText
         android:id="@+id/confirm_client_name"
         android:layout_width="match_parent"
+        android:textColor="@color/appTextColor"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:enabled="false"/>
@@ -55,12 +57,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/client_address"
-        android:textAlignment="center"
         android:textColor="@color/appTextColor"/>
 
     <EditText
         android:id="@+id/confirm_client_address"
         android:layout_width="match_parent"
+        android:textColor="@color/appTextColor"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:enabled="false"/>
@@ -70,12 +72,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/client_cnpj_cpf"
-        android:textAlignment="center"
         android:textColor="@color/appTextColor"/>
 
     <EditText
         android:id="@+id/confirm_client_cnpj_cpf"
         android:layout_width="match_parent"
+        android:textColor="@color/appTextColor"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:enabled="false"/>
