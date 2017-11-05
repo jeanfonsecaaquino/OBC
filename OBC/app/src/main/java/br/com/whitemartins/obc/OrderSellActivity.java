@@ -87,8 +87,10 @@ public class OrderSellActivity extends AppCompatActivity {
 
     private View.OnClickListener finishOrderClickListener = new View.OnClickListener() {
         public void onClick(View v) {
-            Intent finishOrder = new Intent(OrderSellActivity.this, FinishOrderActivity.class);
+            Intent finishOrder = new Intent(OrderSellActivity.this, PosConfirmActivity.class);
+            String total = ((EditText)findViewById(R.id.total_qtd)).getText().toString();
             finishOrder.putExtra("val", val);
+            finishOrder.putExtra("total", total);
             startActivity(finishOrder);
         }
     };

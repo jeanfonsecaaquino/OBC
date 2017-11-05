@@ -41,6 +41,7 @@
         <activity android:name=".ClientListActivity" />
         <activity android:name=".OrderSellActivity" />
         <activity android:name=".ConfirmOrderSellActivity" />
+        <activity android:name=".PosConfirmActivity" />
         <activity android:name=".FinishOrderActivity" />
         <activity android:name=".SendInvoiceActivity" />
         <activity android:name=".SouthpawInvoiceActivity" />

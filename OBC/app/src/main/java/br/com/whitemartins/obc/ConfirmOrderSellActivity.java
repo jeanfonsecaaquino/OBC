@@ -46,31 +46,30 @@ public class ConfirmOrderSellActivity extends AppCompatActivity {
     private View.OnClickListener confirmClickListener = new View.OnClickListener() {
         public void onClick(View v) {
             Intent finishOrder = new Intent(ConfirmOrderSellActivity.this, OrderSellActivity.class);
-            Integer qtd  = Integer.valueOf(((EditText)(findViewById(R.id.qtd_items))).getText().toString());
-            String cylinder  = ((EditText)(findViewById(R.id.cylinder))).getText().toString();
-            Integer lot  = Integer.valueOf(((EditText)(findViewById(R.id.lot))).getText().toString());
-            if(qtd==null  || cylinder ==null || cylinder.isEmpty() || lot==null ){
+            String qtd  = ((EditText)(findViewById(R.id.qtd_items))).getText().toString();
+//            String cylinder  = ((EditText)(findViewById(R.id.cylinder))).getText().toString();
+//            Integer lot  = Integer.valueOf(((EditText)(findViewById(R.id.lot))).getText().toString());
+            if(qtd==null || qtd.isEmpty()){
                 Toast.makeText(ConfirmOrderSellActivity.this, R.string.empty_data, Toast.LENGTH_SHORT).show();
             }else {
+                Integer qtdInt = Integer.parseInt(qtd);
                 String total = getIntent().getExtras().getString("total");
                 Integer totalSomado = 0;
-                Integer valTemp = qtd * item.getPrice();
+                Integer valTemp = qtdInt * item.getPrice();
                 if(total!=null && !total.isEmpty()){
                     totalSomado = Integer.valueOf(total);
-                    totalSomado = totalSomado + qtd;
+                    totalSomado = totalSomado + qtdInt;
                 }else{
-                    totalSomado = qtd;
+                    totalSomado = qtdInt;
                 }
 
                 if(val!=null){
                     valTemp = val + valTemp;
                 }else{
-                    totalSomado = qtd;
+                    totalSomado = qtdInt;
                 }
                 finishOrder.putExtra("total", totalSomado);
                 finishOrder.putExtra("val", valTemp);
-                finishOrder.putExtra("cylinder", qtd);
-                finishOrder.putExtra("lot", lot);
                 startActivity(finishOrder);
                 finish();
             }

@@ -17,11 +17,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:enabled="false"
-            android:text="@string/add_item"
+            android:text="@string/order_sell"
             android:textAlignment="center"
             android:textColor="@color/appTextColor"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/detail_order_sell"
@@ -30,42 +30,10 @@
             android:layout_marginTop="3dp"
             android:textColor="@color/appTextColor" />
 
-        <GridLayout
+        <ListView
+            android:id="@+id/item_list"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp">
-
-        </GridLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:text="@string/saldo"
-            android:textColor="@color/appTextColor" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:text="@string/price"
-            android:textColor="@color/appTextColor" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:text="@string/frete"
-            android:textColor="@color/appTextColor" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:text="@string/certificado"
-            android:textColor="@color/appTextColor" />
+            android:layout_height="114dp"></ListView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -75,11 +43,41 @@
             android:textColor="@color/appTextColor" />
 
         <EditText
-            android:id="@+id/qtd_items"
+            android:id="@+id/qtd_itens"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/appTextColor"
-            android:inputType="number"/>
+            android:enabled="false"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/cylinder"
+            android:textColor="@color/appTextColor" />
+
+        <EditText
+            android:id="@+id/cylinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lot"
+            android:textColor="@color/appTextColor" />
+
+        <EditText
+            android:id="@+id/lot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
 
         <Button
             android:id="@+id/confirm_order_sell"

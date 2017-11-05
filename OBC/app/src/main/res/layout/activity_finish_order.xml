@@ -1,97 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="br.com.whitemartins.obc.FinishOrderActivity"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/finish_order"
-        android:textAlignment="center"
-        android:textColor="@color/appTextColor"
-        android:enabled="false"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="br.com.whitemartins.obc.FinishOrderActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/total_order"
-        android:textColor="@color/appTextColor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:text="@string/finish_order"
+            android:textAlignment="center"
+            android:textColor="@color/appTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/val_order"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/appTextColor"
-        android:inputType="number"
-        android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/total_order"
+            android:textColor="@color/appTextColor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/money"
-        android:textColor="@color/appTextColor" />
+        <EditText
+            android:id="@+id/val_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/appTextColor"
-        android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/money"
+            android:textColor="@color/appTextColor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/check"
-        android:textColor="@color/appTextColor" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/appTextColor"
-        android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/check"
+            android:textColor="@color/appTextColor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/check_number"
-        android:textColor="@color/appTextColor" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/appTextColor"
-        android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/check_number"
+            android:textColor="@color/appTextColor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/invoice"
-        android:textColor="@color/appTextColor" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/appTextColor"
-        android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/invoice"
+            android:textColor="@color/appTextColor" />
 
-    <Button
-        android:id="@+id/finish_order"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@color/appColor"
-        android:text="@string/confirm"
-        android:textColor="@color/appTextColorWithBackground" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/appTextColor" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/finish_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/appColor"
+            android:text="@string/confirm"
+            android:textColor="@color/appTextColorWithBackground" />
+
+    </LinearLayout>
+</ScrollView>

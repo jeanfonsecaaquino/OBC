@@ -20,6 +20,7 @@
 
     <!-- CONSTANTE DE LISTAGEM-->
     <string name="client_list_title">Lista de Clientes</string>
+    <string name="product_list_title">Lista de Produtos</string>
 
     <!-- CONSTANTES CONFIRMACAO DE VIAGEM -->
     <string name="customer_service">ATENDIMENTO AO CLIENTE</string>
@@ -37,7 +38,7 @@
     <!--MENSAGENS DA APLICAÇÃO-->
     <string name="exit_confirm_travel_msg">OS DADOS DA VIAGEM SERÃO PERDIDOS! Confirma?</string>
     <string name="exit_confirm_clean_table_data">APAGANDO DADOS DAS TABELAS</string>
-    <string name="send_data_printer">ENVIANDO DADOS PARA IMPRESSORA...</string>
+    <string name="send_data_printer">AGUARDE A IMPRESSÃO...</string>
     <string name="send_data_printer_ok">DADOS ENVIADOS</string>
     <string name="send_data_printer_fail">ERRO AO ENVIAR OS DADOS</string>
     <string name="bar_code_msg">CODIDO VERIFICADO COM SUCESSO</string>
@@ -93,16 +94,21 @@
     <!-- MENU BAR OPTIONS-->
     <string name="menu_config_system">Configurar Sistema</string>
     <string name="menu_recover_client">Recuperar Cliente</string>
-    <string name="signup_client">Cadastrar no cliente</string>
+    <string name="signup_client">Cadastrar novo Cliente</string>
     <string name="menu_travel_data">Dados da Viagem</string>
     <string name="title_activity_detalhe_cliente">DetalheClienteActivity</string>
 
     <!-- CONSTANTES TELA VENDA DE PEDIDOS-->
     <string name="order_sell">PEDIDO - VENDA</string>
+    <string name="add_item">ADICIONAR ITEM AO PEDIDO</string>
     <string name="order_sell_number_product">N° PRODUTO</string>
     <string name="order_sell_order">Nº DO PEDIDO</string>
     <string name="order_sell_list">LISTAR</string>
     <string name="order_sell_qtd_itens">QUANTIDADE DE ITENS:</string>
+    <string name="saldo">Saldo: 16</string>
+    <string name="price">Preço: 100,00</string>
+    <string name="frete">Frete: 25843</string>
+    <string name="certificado">Certificado: 0.0000</string>
     <string name="finish_sell">FINALIZAR PEDIDO</string>
     <string name="cylinder">CILINDRO:</string>
     <string name="lot">LOTE:</string>
@@ -138,6 +144,7 @@
     <!-- CONSTANTE TELA DE ASSINATURA-->
     <string name="save_signature">CONFIRMAR</string>
     <string name="clear">LIMPAR</string>
+    <string name="name">Nome</string>
 
     <!-- CONSTANTE DE CODIGO DE BARRAS -->
     <string name="verify_bar_code">VERIFICAR CODIGO DE BARRAS</string>
