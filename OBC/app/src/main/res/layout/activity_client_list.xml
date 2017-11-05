@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="br.com.whitemartins.obc.ClientListActivity">
 
-    <ListView
-        android:id="@+id/client_list"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/client_list_title"
+        android:textAlignment="center"
+        android:textColor="@color/appTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-    </ListView>
+        <ListView
+            android:id="@+id/client_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="20dp">
 
-</RelativeLayout>
+        </ListView>
+</LinearLayout>

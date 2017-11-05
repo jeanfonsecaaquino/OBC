@@ -40,7 +40,7 @@
         <activity android:name=".ClientDetailActivity" />
         <activity android:name=".ClientListActivity" />
         <activity android:name=".OrderSellActivity" />
-        <activity android:name=".OrderSellMedicine" />
+        <activity android:name=".ConfirmOrderSellActivity" />
         <activity android:name=".FinishOrderActivity" />
         <activity android:name=".SendInvoiceActivity" />
         <activity android:name=".SouthpawInvoiceActivity" />

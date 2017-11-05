@@ -18,6 +18,9 @@
     <string name="cancel">CANCELAR VIAGEM</string>
     <string name="nCliente">Nº CLIENTE:</string>
 
+    <!-- CONSTANTE DE LISTAGEM-->
+    <string name="client_list_title">Lista de Clientes</string>
+
     <!-- CONSTANTES CONFIRMACAO DE VIAGEM -->
     <string name="customer_service">ATENDIMENTO AO CLIENTE</string>
     <string name="transfers_stock">TRANSFERE ESTOQUE</string>
@@ -32,12 +35,15 @@
     <string name="voltar">voltar</string>
 
     <!--MENSAGENS DA APLICAÇÃO-->
-    <string name="exit_confirm_travel_msg">OS DADOS DA VIAGEM SERÃO PERDIDOS</string>
+    <string name="exit_confirm_travel_msg">OS DADOS DA VIAGEM SERÃO PERDIDOS! Confirma?</string>
     <string name="exit_confirm_clean_table_data">APAGANDO DADOS DAS TABELAS</string>
     <string name="send_data_printer">ENVIANDO DADOS PARA IMPRESSORA...</string>
     <string name="send_data_printer_ok">DADOS ENVIADOS</string>
     <string name="send_data_printer_fail">ERRO AO ENVIAR OS DADOS</string>
     <string name="bar_code_msg">CODIDO VERIFICADO COM SUCESSO</string>
+    <string name="empty_data">PREENCHA OS DADOS</string>
+    <string name="empty_product_code_msg">PREENCHA OU SELECIONE UM CODIGO DE PRODUTO</string>
+    <string name="invalid_product_code_msg">PRODUTO INEXISTENTE</string>
     <string name="yes">SIM</string>
     <string name="no">NÃO</string>
 
@@ -93,8 +99,8 @@
 
     <!-- CONSTANTES TELA VENDA DE PEDIDOS-->
     <string name="order_sell">PEDIDO - VENDA</string>
-    <string name="order_sell_number_product">Nº PEDIDO:</string>
-    <string name="order_sell_order">Nº DO ITEM:</string>
+    <string name="order_sell_number_product">N° PRODUTO</string>
+    <string name="order_sell_order">Nº DO PEDIDO</string>
     <string name="order_sell_list">LISTAR</string>
     <string name="order_sell_qtd_itens">QUANTIDADE DE ITENS:</string>
     <string name="finish_sell">FINALIZAR PEDIDO</string>
@@ -102,7 +108,6 @@
     <string name="lot">LOTE:</string>
 
     <!-- CONSTANTE DA TELA DE FINALIZAR PEDIDO-->
-    <string name="order_sell_producct_detail">40038432 - Oxigenio Medicinal 10M3 1000 - Capacidade: 10.00</string>
     <string name="finish_order">FINALIZAR PEDIDO</string>
     <string name="total_order">TOTAL DO PEDIDO:</string>
     <string name="money">DINHEIRO:</string>
@@ -127,10 +132,11 @@
     <string name="item">Item</string>
     <string name="volume">Volume</string>
     <string name="total_value_order">Valor Total da Nota Fiscal:</string>
-
-
+    <string name="client_operation">VENDA</string>
+    <string name="acess_key_number">3084327984734183948184190171274104</string>
+    <string name="authorization_protocol">797232374923</string>
     <!-- CONSTANTE TELA DE ASSINATURA-->
-    <string name="save_signature">SALVAR ASSINATURA</string>
+    <string name="save_signature">CONFIRMAR</string>
     <string name="clear">LIMPAR</string>
 
     <!-- CONSTANTE DE CODIGO DE BARRAS -->

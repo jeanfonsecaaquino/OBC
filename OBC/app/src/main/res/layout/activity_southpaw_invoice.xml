@@ -33,6 +33,7 @@
             android:textColor="@color/appTextColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/unimed_fake"
             android:layout_marginTop="3dp"
             android:enabled="false" />
 
@@ -49,6 +50,7 @@
             android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
+            android:text="@string/client_operation"
             android:enabled="false" />
 
         <TextView
@@ -64,6 +66,7 @@
             android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
+            android:text="@string/acess_key_number"
             android:enabled="false" />
 
         <TextView
@@ -79,6 +82,7 @@
             android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
+            android:text="@string/authorization_protocol"
             android:enabled="false" />
 
         <GridLayout

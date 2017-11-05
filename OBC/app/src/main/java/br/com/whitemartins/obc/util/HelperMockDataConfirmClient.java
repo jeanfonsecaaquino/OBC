@@ -38,11 +38,14 @@ public class HelperMockDataConfirmClient {
 
     public static List<ClientVO> getListClientsMock() {
         if(clients.size()==0){
-            new ClientVO("5184657" , PACIENTE, "LUIZ FELIPE ALVARENGA", "AVENIDA ARMANDO LOMBARDI 400 L101 BARRA DA TIJUCA RIO DE JANEIRO RJ", "1-42.163.881/0001-01").addMockClientToList(clients);
-            new ClientVO("52180830", PACIENTE, "CARLOS JORGE", "AVENIDA ARMANDO LOMBARDI 400 L101 BARRA DA TIJUCA RIO DE JANEIRO RJ", "1-42.163.881/0001-01").addMockClientToList(clients);
-            new ClientVO("52180830", PACIENTE, "CARLOS JORGE", "AVENIDA ARMANDO LOMBARDI 400 L101 BARRA DA TIJUCA RIO DE JANEIRO RJ", "1-42.163.881/0001-01").addMockClientToList(clients);
-            new ClientVO("53417434", PACIENTE, "PAULO JOSE DE ABREU", "AVENIDA ARMANDO LOMBARDI 400 L101 BARRA DA TIJUCA RIO DE JANEIRO RJ", "1-42.163.881/0001-01").addMockClientToList(clients);
-            new ClientVO("54784972", PACIENTE, "PEDRO HENRIQUE", "AVENIDA ARMANDO LOMBARDI 400 L101 BARRA DA TIJUCA RIO DE JANEIRO RJ", "1-42.163.881/0001-01").addMockClientToList(clients);
+            new ClientVO(   "56262004" ,PACIENTE,
+                                "DANIELE FRASCARELI",
+                                "AVENIDA TRES DE MARCO",
+                                "388.984.618-10").addMockClientToList(clients);
+            new ClientVO(   "55687660" , PACIENTE,
+                                "COMERCIO SUC.CARDOSO BOITUVA ME  ",
+                                "AVENIDA MANOEL TRUJILLO, 126",
+                                "008.463.816/0001-63").addMockClientToList(clients);
         }
         return clients;
     }
@@ -56,11 +59,20 @@ public class HelperMockDataConfirmClient {
         return null;
     }
 
+    public static ItemVO getItemByNumber(String number) {
+        for (ItemVO item : items) {
+            if (item.getNumber().equalsIgnoreCase(number)) {
+                return item;
+            }
+        }
+        return null;
+    }
+
     public static List<ItemVO> getItemsMock() {
         if(items.size()==0) {
-            new ItemVO("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
-            new ItemVO("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
-            new ItemVO("OxigenioGas CLi T 10M3", "10.00").addMockClientToList(items);
+            new ItemVO("40025532","Oxigenio Gas Cli T 10M3", "10.00", 10).addMockClientToList(items);
+            new ItemVO("40038432","Oxigenio Medicinal Cli T 10M3", "10.00", 100).addMockClientToList(items);
+            new ItemVO("40037393","Argonio Gas Cil K 7M3", "7.00", 200).addMockClientToList(items);
         }
         return items;
     }

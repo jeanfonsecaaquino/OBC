@@ -24,8 +24,13 @@ public class ItemListActivity extends AppCompatActivity {
         itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ItemVO cliente = (ItemVO) itemList.getItemAtPosition(position);
-                Intent confirmClient = new Intent(ItemListActivity.this, OrderSellActivity.class);
+                ItemVO item = (ItemVO) itemList.getItemAtPosition(position);
+                Intent confirmClient = new Intent(ItemListActivity.this, ConfirmOrderSellActivity.class);
+                if(getIntent().getExtras()!=null){
+                    confirmClient.putExtra("total", getIntent().getExtras().getString("total"));
+                    confirmClient.putExtra("val", getIntent().getExtras().getInt("val"));
+                }
+                confirmClient.putExtra("productNumber", item.getNumber());
                 startActivity(confirmClient);
                 finish();
             }

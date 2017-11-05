@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="br.com.whitemartins.obc.OrderSellMedicine">
+        tools:context="br.com.whitemartins.obc.ConfirmOrderSellActivity">
 
         <TextView
             android:layout_width="match_parent"
@@ -24,10 +24,10 @@
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/detail_order_sell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="@string/order_sell_producct_detail"
             android:textColor="@color/appTextColor" />
 
         <GridLayout
@@ -47,11 +47,11 @@
             android:textColor="@color/appTextColor" />
 
         <EditText
+            android:id="@+id/qtd_items"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/appTextColor"
-            android:inputType="number"
-            android:enabled="false"/>
+            android:inputType="number"/>
 
 
         <TextView
@@ -62,6 +62,7 @@
             android:textColor="@color/appTextColor" />
 
         <EditText
+            android:id="@+id/cylinder"
             android:layout_width="match_parent"
             android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
             android:textColor="@color/appTextColor" />
 
         <EditText
+            android:id="@+id/lot"
             android:layout_width="match_parent"
             android:textColor="@color/appTextColor"
             android:layout_height="wrap_content"
@@ -89,14 +91,14 @@
             android:text="@string/confirm"
             android:textColor="@color/appTextColorWithBackground" />
 
-        <Button
+        <!--<Button
             android:id="@+id/scan_bar_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/appColor"
             android:text="@string/verify_bar_code"
-            android:textColor="@color/appTextColorWithBackground" />
+            android:textColor="@color/appTextColorWithBackground" />-->
 
     </LinearLayout>
 </ScrollView>

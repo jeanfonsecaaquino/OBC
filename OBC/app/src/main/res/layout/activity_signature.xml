@@ -11,10 +11,19 @@
     android:background="@color/appTextColor"
     tools:context="br.com.whitemartins.obc.SignatureActivity">
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/appTextColorWithBackground" />
+
     <br.com.whitemartins.obc.util.CanvasView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="20dp"
         android:id="@+id/canvas"
         android:background="@color/appTextColorWithBackground"

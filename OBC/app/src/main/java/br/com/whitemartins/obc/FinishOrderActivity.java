@@ -7,18 +7,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import br.com.whitemartins.obc.util.HelperActivitiy;
 
 public class FinishOrderActivity extends AppCompatActivity {
 
+    Integer val;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finish_order);
+
+        val = getIntent().getExtras().getInt("val");
         HelperActivitiy.setBarAction(this);
         Button finishOrder = (Button) findViewById(R.id.finish_order);
         finishOrder.setOnClickListener(finishOrderClickListener);
+        EditText valOrder = ((EditText) findViewById(R.id.val_order));
+        valOrder.setText(val.toString());
     }
 
     private View.OnClickListener finishOrderClickListener = new View.OnClickListener() {
